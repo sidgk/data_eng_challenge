@@ -1,4 +1,4 @@
-select {{ null_if ('id') }} as id
+select id
       ,{{ null_if ('name') }} as name
       -- lookups
       ,{{ null_if ('item_c') }} as item_id
