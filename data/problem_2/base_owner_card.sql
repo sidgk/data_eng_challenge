@@ -1,4 +1,6 @@
-select {{ null_if ('id') }} as id
+{# owner cards base model #}
+select 
+      {{ null_if ('id') }} as id
       ,{{ null_if ('name') }} as name
       ,{{ null_if ('other_activities_c') }} as other_activities
       ,{{ null_if ('other_goals_c') }} as other_goals
